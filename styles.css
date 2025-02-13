@@ -1,0 +1,157 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    margin: 0 15px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #2E7D32;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #1B5E20;
+}
+
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically */
+    padding-right: 20px;
+}
+
+.profile-pic {
+    width: 80%;  /* Adjusts the width to fit nicely */
+    max-width: 300px; /* Ensures it does not get too big */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a slight shadow for better appearance */
+}
+
+/* About Page Layout */
+.container {
+    display: flex;
+    height: 80vh; /* Adjusted to fit the screen without overflowing */
+    width: 90%;
+    margin: 20px auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.left-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e0e0;
+    padding: 20px;
+}
+
+.left-side img {
+    width: 80%; /* Ensures it covers about 60-80% of the left side */
+    height: auto;
+    max-height: 80%; /* Prevents it from getting too tall */
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.right-side {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+    .container {
+        flex-direction: column;
+        height: auto; /* Allows better responsiveness */
+    }
+    .left-side, .right-side {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+    .left-side img {
+        max-width: 250px; /* Prevents it from getting too large on smaller screens */
+        max-height: none;
+    }
+}
+
+/* Dark Mode */
+.dark {
+    background-color: #121212;
+    color: #f4f4f9;
+}
+.dark .content {
+    background: #1E1E1E;
+    color: #f4f4f9;
+}
+.dark header, .dark footer {
+    background-color: #333;
+}
+.dark nav a {
+    background-color: #555;
+}
+.dark nav a:hover {
+    background-color: #777;
+}

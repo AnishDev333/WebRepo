@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const toggleButton = document.createElement("button");
+            toggleButton.innerText = "Toggle Dark Mode";
+            toggleButton.style.position = "fixed";
+            toggleButton.style.top = "10px";
+            toggleButton.style.right = "10px";
+            toggleButton.onclick = function() {
+                document.body.classList.toggle("dark");
+            };
+            document.body.appendChild(toggleButton);
+        });
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Contact Me</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="page1.html">About Me</a>
+        <a href="page2.html">My Hobbies</a>
+    </nav>
+</header>
+
+<div class="container">
+    <!-- Left Side: Image -->
+    <div class="left-side">
+        <img src="contact.jpg" alt="Contact Image" class="profile-pic">
+    </div>
+
+    <!-- Right Side: Text Content -->
+    <div class="right-side">
+        <h2>Feel free to get in touch!</h2>
+        <ul>
+            <li>Email: aniswar@nmsu.edu</li>
+            <li>Phone: +1 (575)496-5928</li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/aniswar">Aniswar LinkedIn</a></li>
+            <li>GitHub: <a href="https://github.com/AnishDev333">Aniswar GitHub</a></li>
+        </ul>
+        
+        <nav>
+            <a href="index.html">Back to Main Page</a>
+        </nav>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Aniswar Asokkumar</p>
+</footer>
+
+</body>
+</html>

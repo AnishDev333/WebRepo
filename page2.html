@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobbies</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const toggleButton = document.createElement("button");
+            toggleButton.innerText = "Toggle Dark Mode";
+            toggleButton.style.position = "fixed";
+            toggleButton.style.top = "10px";
+            toggleButton.style.right = "10px";
+            toggleButton.onclick = function() {
+                document.body.classList.toggle("dark");
+            };
+            document.body.appendChild(toggleButton);
+        });
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>My Hobbies</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="page1.html">About Me</a>
+        <a href="page3.html">Contact Me</a>
+    </nav>
+</header>
+
+<div class="container">
+    <!-- Left Side: Image -->
+    <div class="left-side">
+        <img src="free.jpg" alt="My Hobby Image" class="profile-pic">
+    </div>
+
+    <!-- Right Side: Text Content -->
+    <div class="right-side">
+        <h2>Let me share a bit about my hobbies!</h2>
+        <ul>
+            <li>I love playing video games, especially strategy games like chess and DOTA.</li>
+            <li>Gaming is a great way to relax and also to connect with friends.</li>
+            <li>I'm also interested in photography, capturing moments from everyday life.</li>
+            <li>Another hobby of mine is playing the guitar. Music is a huge part of my life!</li>
+            <li>Recently, I started learning to cook, and it's been a fun challenge.</li>
+        </ul>
+        
+        <nav>
+            <a href="index.html">Back to Main Page</a>
+        </nav>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Aniswar Asokkumar</p>
+</footer>
+
+</body>
+</html>
